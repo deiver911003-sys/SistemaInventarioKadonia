@@ -1,0 +1,85 @@
+
+.inventario {
+  padding: 20px;
+  color: #222;
+}
+
+.resumen-inventario {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.tarjeta-inventario {
+  padding: 18px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px #0000000d;
+}
+
+.tarjeta-inventario h3 {
+  margin-top: 0;
+  font-size: 15px;
+}
+
+.tarjeta-inventario p {
+  margin-bottom: 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.tarjeta-inventario.alerta {
+  border-left: 5px solid #dc3545;
+}
+
+.tabla-contenedor {
+  width: 100%;
+  overflow-x: auto;
+  margin: 18px 0;
+}
+
+.inventario table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.inventario th,
+.inventario td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.inventario th {
+  background: #222;
+  color: #fff;
+}
+
+.inventario tr.stock-bajo {
+  background: #ffe1e1;
+  color: #9c1515;
+  font-weight: bold;
+}
+
+.inventario button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #222;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .resumen-inventario {
+    grid-template-columns: 1fr;
+  }
+
+  .inventario {
+    padding: 10px;
+  }
+}

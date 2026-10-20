@@ -1,0 +1,45 @@
+<h2>Productos</h2>
+
+ <div class="form">
+  <input id="p_codigo" placeholder="Código (ej. JN-004)" required>
+  <input id="p_referencia" placeholder="Referencia (ej. KAD-103)" required>
+  <input id="p_nombre" placeholder="Nombre del jean" required>
+
+  <label for="p_categoria">Categoría:</label>
+  <select id="p_categoria" required>
+    <option value="">Selecciona una categoría</option>
+    <option value="1">Categoría 1</option>
+    <option value="2">Categoría 2</option>
+    <option value="3">Categoría 3</option>
+  </select>
+
+  <input id="p_talla" placeholder="Talla (ej. 8, 10, 12)" required>
+  <input id="p_color" placeholder="Color" required>
+  <input id="p_compra" type="number" min="0" step="0.01" placeholder="Precio de compra" required>
+  <input id="p_precio" type="number" min="0" step="0.01" placeholder="Precio de venta" required>
+  <input id="p_cantidad" type="number" min="0" step="1" placeholder="Cantidad" required>
+  <input id="p_stock_minimo" type="number" min="0" step="1" value="5" placeholder="Stock mínimo">
+  <button type="button" onclick="guardarProducto()">Guardar</button>
+</div>
+
+<input id="buscarProducto" placeholder="Buscar..." onkeyup="buscarProducto()">
+<button onclick="buscarProducto()">Buscar</button>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Código</th>
+      <th>Nombre</th>
+      <th>Precio de venta</th>
+      <th>Cantidad</th>
+      <th>Talla</th>
+    </tr>
+  </thead>
+  <tbody id="tablaProductos">
+    <tr>
+      <td colspan="6">Cargando productos...</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SIJK </title>
+
+    <!-- Iconos -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="product/product.css">
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>👖JEANS KADONIA</h2>
+
+    <ul>
+        <li data-page="dashboard/dashboard.html">
+            <i class="fa-solid fa-chart-line"></i> Dashboard
+        </li>
+
+         <li id="productos-btn">
+
+        <i class="fa-solid fa-box"></i> Productos
+
+        <ul id="menuProductos" class="submenu">
+
+            <li data-page="product/agregar.html">➕ Agregar</li>
+            <li data-page="product/editar.html">✏️ Editar</li>
+            <li data-page="product/eliminar.html">🗑️ Eliminar</li>
+            <li data-page="product/buscar.html">🔍 Buscar</li>
+
+        </ul>
+
+         </li>
+
+        <li data-page="inventario/inventario.html">
+             <i class="fa-solid fa-warehouse"></i> Inventario
+        </li>
+
+        <li data-page="ventas/ventas.html">
+             <i class="fa-solid fa-cart-shopping"></i> Ventas
+        </li>
+
+        <li data-page="clientes/clientes.html">
+            <i class="fa-solid fa-users"></i> Clientes
+        </li>
+
+    </ul>
+    
+</div>
+
+<!-- CONTENEDOR PRINCIPAL -->
+<div class="main">
+
+    <div class="topbar">
+        <h1 id="titulo-pagina"></h1>
+    </div>
+
+    <div id="contenido-principal">
+        <!-- Aquí cargará dashboard.html automáticamente -->
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<div class="dashboard">
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>📦 Productos</h3>
+            <p id="total-productos">0</p>
+        </div>
+
+        <div class="card">
+            <h3>💰 Ventas Hoy</h3>
+            <p id="ventas-hoy">0</p>
+        </div>
+
+        <div class="card">
+            <h3>🛒 Compras Hoy</h3>
+            <p id="compras-hoy">0</p>
+        </div>
+
+        <div class="card">
+            <h3>⚠️ Stock Bajo</h3>
+            <p id="stock-bajo">0</p>
+        </div>
+
+    </div>
+
+    <div class="charts">
+
+        <div class="chart-box">
+            <h2>Ventas Semanales</h2>
+            <canvas id="lineChart"></canvas>
+        </div>
+
+        <div class="chart-box">
+            <h2>Categorías</h2>
+            <canvas id="pieChart"></canvas>
+        </div>
+    </div>
+    <div class="table-section">
+
+        <h2>Últimas Ventas</h2>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Cliente</th>
+                    <th>Producto</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+
+            <tbody id="tabla-ventas">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
